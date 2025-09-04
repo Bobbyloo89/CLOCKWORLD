@@ -1,0 +1,124 @@
+[
+  { "city": "Tokyo", "country": "Japan", "tz": "Asia/Tokyo", "featured": true },
+  {
+    "city": "Paris",
+    "country": "France",
+    "tz": "Europe/Paris",
+    "featured": true
+  },
+  {
+    "city": "Moscow",
+    "country": "Russia",
+    "tz": "Europe/Moscow",
+    "featured": true
+  },
+  {
+    "city": "New York",
+    "country": "United States",
+    "tz": "America/New_York",
+    "featured": true
+  },
+  {
+    "city": "Los Angeles",
+    "country": "United States",
+    "tz": "America/Los_Angeles",
+    "featured": true
+  },
+  {
+    "city": "São Paulo",
+    "country": "Brazil",
+    "tz": "America/Sao_Paulo",
+    "featured": true
+  },
+
+  {
+    "city": "London",
+    "country": "United Kingdom",
+    "tz": "Europe/London",
+    "featured": false
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "tz": "Europe/Berlin",
+    "featured": false
+  },
+  {
+    "city": "Cairo",
+    "country": "Egypt",
+    "tz": "Africa/Cairo",
+    "featured": false
+  },
+  {
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "tz": "Africa/Johannesburg",
+    "featured": false
+  },
+  {
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "tz": "Asia/Dubai",
+    "featured": false
+  },
+  {
+    "city": "Beijing",
+    "country": "China",
+    "tz": "Asia/Shanghai",
+    "featured": false
+  },
+  {
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "tz": "Asia/Hong_Kong",
+    "featured": false
+  },
+  {
+    "city": "Singapore",
+    "country": "Singapore",
+    "tz": "Asia/Singapore",
+    "featured": false
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "tz": "Asia/Kolkata",
+    "featured": false
+  },
+  {
+    "city": "Mexico City",
+    "country": "Mexico",
+    "tz": "America/Mexico_City",
+    "featured": false
+  },
+  {
+    "city": "Toronto",
+    "country": "Canada",
+    "tz": "America/Toronto",
+    "featured": false
+  },
+  {
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "tz": "America/Argentina/Buenos_Aires",
+    "featured": false
+  },
+  {
+    "city": "Auckland",
+    "country": "New Zealand",
+    "tz": "Pacific/Auckland",
+    "featured": false
+  },
+  {
+    "city": "Honolulu",
+    "country": "United States",
+    "tz": "Pacific/Honolulu",
+    "featured": false
+  },
+  {
+    "city": "Seoul",
+    "country": "South Korea",
+    "tz": "Asia/Seoul",
+    "featured": false
+  }
+]

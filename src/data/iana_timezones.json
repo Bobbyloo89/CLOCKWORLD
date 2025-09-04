@@ -1,0 +1,1674 @@
+[
+  {
+    "tz": "Africa/Abidjan",
+    "countries": ["Côte d'Ivoire"]
+  },
+  {
+    "tz": "Africa/Accra",
+    "countries": ["Ghana"]
+  },
+  {
+    "tz": "Africa/Addis_Ababa",
+    "countries": ["Ethiopia"]
+  },
+  {
+    "tz": "Africa/Algiers",
+    "countries": ["Algeria"]
+  },
+  {
+    "tz": "Africa/Asmara",
+    "countries": ["Eritrea"]
+  },
+  {
+    "tz": "Africa/Bamako",
+    "countries": ["Mali"]
+  },
+  {
+    "tz": "Africa/Bangui",
+    "countries": ["Central African Rep."]
+  },
+  {
+    "tz": "Africa/Banjul",
+    "countries": ["Gambia"]
+  },
+  {
+    "tz": "Africa/Bissau",
+    "countries": ["Guinea-Bissau"]
+  },
+  {
+    "tz": "Africa/Blantyre",
+    "countries": ["Malawi"]
+  },
+  {
+    "tz": "Africa/Brazzaville",
+    "countries": ["Congo (Rep.)"]
+  },
+  {
+    "tz": "Africa/Bujumbura",
+    "countries": ["Burundi"]
+  },
+  {
+    "tz": "Africa/Cairo",
+    "countries": ["Egypt"]
+  },
+  {
+    "tz": "Africa/Casablanca",
+    "countries": ["Morocco"]
+  },
+  {
+    "tz": "Africa/Ceuta",
+    "countries": ["Spain"]
+  },
+  {
+    "tz": "Africa/Conakry",
+    "countries": ["Guinea"]
+  },
+  {
+    "tz": "Africa/Dakar",
+    "countries": ["Senegal"]
+  },
+  {
+    "tz": "Africa/Dar_es_Salaam",
+    "countries": ["Tanzania"]
+  },
+  {
+    "tz": "Africa/Djibouti",
+    "countries": ["Djibouti"]
+  },
+  {
+    "tz": "Africa/Douala",
+    "countries": ["Cameroon"]
+  },
+  {
+    "tz": "Africa/El_Aaiun",
+    "countries": ["Western Sahara"]
+  },
+  {
+    "tz": "Africa/Freetown",
+    "countries": ["Sierra Leone"]
+  },
+  {
+    "tz": "Africa/Gaborone",
+    "countries": ["Botswana"]
+  },
+  {
+    "tz": "Africa/Harare",
+    "countries": ["Zimbabwe"]
+  },
+  {
+    "tz": "Africa/Johannesburg",
+    "countries": ["South Africa"]
+  },
+  {
+    "tz": "Africa/Juba",
+    "countries": ["South Sudan"]
+  },
+  {
+    "tz": "Africa/Kampala",
+    "countries": ["Uganda"]
+  },
+  {
+    "tz": "Africa/Khartoum",
+    "countries": ["Sudan"]
+  },
+  {
+    "tz": "Africa/Kigali",
+    "countries": ["Rwanda"]
+  },
+  {
+    "tz": "Africa/Kinshasa",
+    "countries": ["Congo (Dem. Rep.)"]
+  },
+  {
+    "tz": "Africa/Lagos",
+    "countries": ["Nigeria"]
+  },
+  {
+    "tz": "Africa/Libreville",
+    "countries": ["Gabon"]
+  },
+  {
+    "tz": "Africa/Lome",
+    "countries": ["Togo"]
+  },
+  {
+    "tz": "Africa/Luanda",
+    "countries": ["Angola"]
+  },
+  {
+    "tz": "Africa/Lubumbashi",
+    "countries": ["Congo (Dem. Rep.)"]
+  },
+  {
+    "tz": "Africa/Lusaka",
+    "countries": ["Zambia"]
+  },
+  {
+    "tz": "Africa/Malabo",
+    "countries": ["Equatorial Guinea"]
+  },
+  {
+    "tz": "Africa/Maputo",
+    "countries": ["Mozambique"]
+  },
+  {
+    "tz": "Africa/Maseru",
+    "countries": ["Lesotho"]
+  },
+  {
+    "tz": "Africa/Mbabane",
+    "countries": ["Eswatini (Swaziland)"]
+  },
+  {
+    "tz": "Africa/Mogadishu",
+    "countries": ["Somalia"]
+  },
+  {
+    "tz": "Africa/Monrovia",
+    "countries": ["Liberia"]
+  },
+  {
+    "tz": "Africa/Nairobi",
+    "countries": ["Kenya"]
+  },
+  {
+    "tz": "Africa/Ndjamena",
+    "countries": ["Chad"]
+  },
+  {
+    "tz": "Africa/Niamey",
+    "countries": ["Niger"]
+  },
+  {
+    "tz": "Africa/Nouakchott",
+    "countries": ["Mauritania"]
+  },
+  {
+    "tz": "Africa/Ouagadougou",
+    "countries": ["Burkina Faso"]
+  },
+  {
+    "tz": "Africa/Porto-Novo",
+    "countries": ["Benin"]
+  },
+  {
+    "tz": "Africa/Sao_Tome",
+    "countries": ["Sao Tome & Principe"]
+  },
+  {
+    "tz": "Africa/Tripoli",
+    "countries": ["Libya"]
+  },
+  {
+    "tz": "Africa/Tunis",
+    "countries": ["Tunisia"]
+  },
+  {
+    "tz": "Africa/Windhoek",
+    "countries": ["Namibia"]
+  },
+  {
+    "tz": "America/Adak",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Anchorage",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Anguilla",
+    "countries": ["Anguilla"]
+  },
+  {
+    "tz": "America/Antigua",
+    "countries": ["Antigua & Barbuda"]
+  },
+  {
+    "tz": "America/Araguaina",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Argentina/Buenos_Aires",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/Catamarca",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/Cordoba",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/Jujuy",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/La_Rioja",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/Mendoza",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/Rio_Gallegos",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/Salta",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/San_Juan",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/San_Luis",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/Tucuman",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Argentina/Ushuaia",
+    "countries": ["Argentina"]
+  },
+  {
+    "tz": "America/Aruba",
+    "countries": ["Aruba"]
+  },
+  {
+    "tz": "America/Asuncion",
+    "countries": ["Paraguay"]
+  },
+  {
+    "tz": "America/Atikokan",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Bahia",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Bahia_Banderas",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Barbados",
+    "countries": ["Barbados"]
+  },
+  {
+    "tz": "America/Belem",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Belize",
+    "countries": ["Belize"]
+  },
+  {
+    "tz": "America/Blanc-Sablon",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Boa_Vista",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Bogota",
+    "countries": ["Colombia"]
+  },
+  {
+    "tz": "America/Boise",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Cambridge_Bay",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Campo_Grande",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Cancun",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Caracas",
+    "countries": ["Venezuela"]
+  },
+  {
+    "tz": "America/Cayenne",
+    "countries": ["French Guiana"]
+  },
+  {
+    "tz": "America/Cayman",
+    "countries": ["Cayman Islands"]
+  },
+  {
+    "tz": "America/Chicago",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Chihuahua",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Ciudad_Juarez",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Costa_Rica",
+    "countries": ["Costa Rica"]
+  },
+  {
+    "tz": "America/Coyhaique",
+    "countries": ["Chile"]
+  },
+  {
+    "tz": "America/Creston",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Cuiaba",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Curacao",
+    "countries": ["Curaçao"]
+  },
+  {
+    "tz": "America/Danmarkshavn",
+    "countries": ["Greenland"]
+  },
+  {
+    "tz": "America/Dawson",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Dawson_Creek",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Denver",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Detroit",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Dominica",
+    "countries": ["Dominica"]
+  },
+  {
+    "tz": "America/Edmonton",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Eirunepe",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/El_Salvador",
+    "countries": ["El Salvador"]
+  },
+  {
+    "tz": "America/Fort_Nelson",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Fortaleza",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Glace_Bay",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Goose_Bay",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Grand_Turk",
+    "countries": ["Turks & Caicos Is"]
+  },
+  {
+    "tz": "America/Grenada",
+    "countries": ["Grenada"]
+  },
+  {
+    "tz": "America/Guadeloupe",
+    "countries": ["Guadeloupe"]
+  },
+  {
+    "tz": "America/Guatemala",
+    "countries": ["Guatemala"]
+  },
+  {
+    "tz": "America/Guayaquil",
+    "countries": ["Ecuador"]
+  },
+  {
+    "tz": "America/Guyana",
+    "countries": ["Guyana"]
+  },
+  {
+    "tz": "America/Halifax",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Havana",
+    "countries": ["Cuba"]
+  },
+  {
+    "tz": "America/Hermosillo",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Indiana/Indianapolis",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Indiana/Knox",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Indiana/Marengo",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Indiana/Petersburg",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Indiana/Tell_City",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Indiana/Vevay",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Indiana/Vincennes",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Indiana/Winamac",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Inuvik",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Iqaluit",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Jamaica",
+    "countries": ["Jamaica"]
+  },
+  {
+    "tz": "America/Juneau",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Kentucky/Louisville",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Kentucky/Monticello",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Kralendijk",
+    "countries": ["Caribbean NL"]
+  },
+  {
+    "tz": "America/La_Paz",
+    "countries": ["Bolivia"]
+  },
+  {
+    "tz": "America/Lima",
+    "countries": ["Peru"]
+  },
+  {
+    "tz": "America/Los_Angeles",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Lower_Princes",
+    "countries": ["St Maarten (Dutch)"]
+  },
+  {
+    "tz": "America/Maceio",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Managua",
+    "countries": ["Nicaragua"]
+  },
+  {
+    "tz": "America/Manaus",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Marigot",
+    "countries": ["St Martin (French)"]
+  },
+  {
+    "tz": "America/Martinique",
+    "countries": ["Martinique"]
+  },
+  {
+    "tz": "America/Matamoros",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Mazatlan",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Menominee",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Merida",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Metlakatla",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Mexico_City",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Miquelon",
+    "countries": ["St Pierre & Miquelon"]
+  },
+  {
+    "tz": "America/Moncton",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Monterrey",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Montevideo",
+    "countries": ["Uruguay"]
+  },
+  {
+    "tz": "America/Montserrat",
+    "countries": ["Montserrat"]
+  },
+  {
+    "tz": "America/Nassau",
+    "countries": ["Bahamas"]
+  },
+  {
+    "tz": "America/New_York",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Nome",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Noronha",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/North_Dakota/Beulah",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/North_Dakota/Center",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/North_Dakota/New_Salem",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Nuuk",
+    "countries": ["Greenland"]
+  },
+  {
+    "tz": "America/Ojinaga",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Panama",
+    "countries": ["Panama"]
+  },
+  {
+    "tz": "America/Paramaribo",
+    "countries": ["Suriname"]
+  },
+  {
+    "tz": "America/Phoenix",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/Port-au-Prince",
+    "countries": ["Haiti"]
+  },
+  {
+    "tz": "America/Port_of_Spain",
+    "countries": ["Trinidad & Tobago"]
+  },
+  {
+    "tz": "America/Porto_Velho",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Puerto_Rico",
+    "countries": ["Puerto Rico"]
+  },
+  {
+    "tz": "America/Punta_Arenas",
+    "countries": ["Chile"]
+  },
+  {
+    "tz": "America/Rankin_Inlet",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Recife",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Regina",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Resolute",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Rio_Branco",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Santarem",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Santiago",
+    "countries": ["Chile"]
+  },
+  {
+    "tz": "America/Santo_Domingo",
+    "countries": ["Dominican Republic"]
+  },
+  {
+    "tz": "America/Sao_Paulo",
+    "countries": ["Brazil"]
+  },
+  {
+    "tz": "America/Scoresbysund",
+    "countries": ["Greenland"]
+  },
+  {
+    "tz": "America/Sitka",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "America/St_Barthelemy",
+    "countries": ["St Barthelemy"]
+  },
+  {
+    "tz": "America/St_Johns",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/St_Kitts",
+    "countries": ["St Kitts & Nevis"]
+  },
+  {
+    "tz": "America/St_Lucia",
+    "countries": ["St Lucia"]
+  },
+  {
+    "tz": "America/St_Thomas",
+    "countries": ["Virgin Islands (US)"]
+  },
+  {
+    "tz": "America/St_Vincent",
+    "countries": ["St Vincent"]
+  },
+  {
+    "tz": "America/Swift_Current",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Tegucigalpa",
+    "countries": ["Honduras"]
+  },
+  {
+    "tz": "America/Thule",
+    "countries": ["Greenland"]
+  },
+  {
+    "tz": "America/Tijuana",
+    "countries": ["Mexico"]
+  },
+  {
+    "tz": "America/Toronto",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Tortola",
+    "countries": ["Virgin Islands (UK)"]
+  },
+  {
+    "tz": "America/Vancouver",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Whitehorse",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Winnipeg",
+    "countries": ["Canada"]
+  },
+  {
+    "tz": "America/Yakutat",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "Antarctica/Casey",
+    "countries": ["Antarctica"]
+  },
+  {
+    "tz": "Antarctica/Davis",
+    "countries": ["Antarctica"]
+  },
+  {
+    "tz": "Antarctica/DumontDUrville",
+    "countries": ["Antarctica"]
+  },
+  {
+    "tz": "Antarctica/Macquarie",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Antarctica/Mawson",
+    "countries": ["Antarctica"]
+  },
+  {
+    "tz": "Antarctica/McMurdo",
+    "countries": ["Antarctica"]
+  },
+  {
+    "tz": "Antarctica/Palmer",
+    "countries": ["Antarctica"]
+  },
+  {
+    "tz": "Antarctica/Rothera",
+    "countries": ["Antarctica"]
+  },
+  {
+    "tz": "Antarctica/Syowa",
+    "countries": ["Antarctica"]
+  },
+  {
+    "tz": "Antarctica/Troll",
+    "countries": ["Antarctica"]
+  },
+  {
+    "tz": "Antarctica/Vostok",
+    "countries": ["Antarctica"]
+  },
+  {
+    "tz": "Arctic/Longyearbyen",
+    "countries": ["Svalbard & Jan Mayen"]
+  },
+  {
+    "tz": "Asia/Aden",
+    "countries": ["Yemen"]
+  },
+  {
+    "tz": "Asia/Almaty",
+    "countries": ["Kazakhstan"]
+  },
+  {
+    "tz": "Asia/Amman",
+    "countries": ["Jordan"]
+  },
+  {
+    "tz": "Asia/Anadyr",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Aqtau",
+    "countries": ["Kazakhstan"]
+  },
+  {
+    "tz": "Asia/Aqtobe",
+    "countries": ["Kazakhstan"]
+  },
+  {
+    "tz": "Asia/Ashgabat",
+    "countries": ["Turkmenistan"]
+  },
+  {
+    "tz": "Asia/Atyrau",
+    "countries": ["Kazakhstan"]
+  },
+  {
+    "tz": "Asia/Baghdad",
+    "countries": ["Iraq"]
+  },
+  {
+    "tz": "Asia/Bahrain",
+    "countries": ["Bahrain"]
+  },
+  {
+    "tz": "Asia/Baku",
+    "countries": ["Azerbaijan"]
+  },
+  {
+    "tz": "Asia/Bangkok",
+    "countries": ["Thailand"]
+  },
+  {
+    "tz": "Asia/Barnaul",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Beirut",
+    "countries": ["Lebanon"]
+  },
+  {
+    "tz": "Asia/Bishkek",
+    "countries": ["Kyrgyzstan"]
+  },
+  {
+    "tz": "Asia/Brunei",
+    "countries": ["Brunei"]
+  },
+  {
+    "tz": "Asia/Chita",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Colombo",
+    "countries": ["Sri Lanka"]
+  },
+  {
+    "tz": "Asia/Damascus",
+    "countries": ["Syria"]
+  },
+  {
+    "tz": "Asia/Dhaka",
+    "countries": ["Bangladesh"]
+  },
+  {
+    "tz": "Asia/Dili",
+    "countries": ["East Timor"]
+  },
+  {
+    "tz": "Asia/Dubai",
+    "countries": ["United Arab Emirates"]
+  },
+  {
+    "tz": "Asia/Dushanbe",
+    "countries": ["Tajikistan"]
+  },
+  {
+    "tz": "Asia/Famagusta",
+    "countries": ["Cyprus"]
+  },
+  {
+    "tz": "Asia/Gaza",
+    "countries": ["Palestine"]
+  },
+  {
+    "tz": "Asia/Hebron",
+    "countries": ["Palestine"]
+  },
+  {
+    "tz": "Asia/Ho_Chi_Minh",
+    "countries": ["Vietnam"]
+  },
+  {
+    "tz": "Asia/Hong_Kong",
+    "countries": ["Hong Kong"]
+  },
+  {
+    "tz": "Asia/Hovd",
+    "countries": ["Mongolia"]
+  },
+  {
+    "tz": "Asia/Irkutsk",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Jakarta",
+    "countries": ["Indonesia"]
+  },
+  {
+    "tz": "Asia/Jayapura",
+    "countries": ["Indonesia"]
+  },
+  {
+    "tz": "Asia/Jerusalem",
+    "countries": ["Israel"]
+  },
+  {
+    "tz": "Asia/Kabul",
+    "countries": ["Afghanistan"]
+  },
+  {
+    "tz": "Asia/Kamchatka",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Karachi",
+    "countries": ["Pakistan"]
+  },
+  {
+    "tz": "Asia/Kathmandu",
+    "countries": ["Nepal"]
+  },
+  {
+    "tz": "Asia/Khandyga",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Kolkata",
+    "countries": ["India"]
+  },
+  {
+    "tz": "Asia/Krasnoyarsk",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Kuala_Lumpur",
+    "countries": ["Malaysia"]
+  },
+  {
+    "tz": "Asia/Kuching",
+    "countries": ["Malaysia"]
+  },
+  {
+    "tz": "Asia/Kuwait",
+    "countries": ["Kuwait"]
+  },
+  {
+    "tz": "Asia/Macau",
+    "countries": ["Macau"]
+  },
+  {
+    "tz": "Asia/Magadan",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Makassar",
+    "countries": ["Indonesia"]
+  },
+  {
+    "tz": "Asia/Manila",
+    "countries": ["Philippines"]
+  },
+  {
+    "tz": "Asia/Muscat",
+    "countries": ["Oman"]
+  },
+  {
+    "tz": "Asia/Nicosia",
+    "countries": ["Cyprus"]
+  },
+  {
+    "tz": "Asia/Novokuznetsk",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Novosibirsk",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Omsk",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Oral",
+    "countries": ["Kazakhstan"]
+  },
+  {
+    "tz": "Asia/Phnom_Penh",
+    "countries": ["Cambodia"]
+  },
+  {
+    "tz": "Asia/Pontianak",
+    "countries": ["Indonesia"]
+  },
+  {
+    "tz": "Asia/Pyongyang",
+    "countries": ["Korea (North)"]
+  },
+  {
+    "tz": "Asia/Qatar",
+    "countries": ["Qatar"]
+  },
+  {
+    "tz": "Asia/Qostanay",
+    "countries": ["Kazakhstan"]
+  },
+  {
+    "tz": "Asia/Qyzylorda",
+    "countries": ["Kazakhstan"]
+  },
+  {
+    "tz": "Asia/Riyadh",
+    "countries": ["Saudi Arabia"]
+  },
+  {
+    "tz": "Asia/Sakhalin",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Samarkand",
+    "countries": ["Uzbekistan"]
+  },
+  {
+    "tz": "Asia/Seoul",
+    "countries": ["Korea (South)"]
+  },
+  {
+    "tz": "Asia/Shanghai",
+    "countries": ["China"]
+  },
+  {
+    "tz": "Asia/Singapore",
+    "countries": ["Singapore"]
+  },
+  {
+    "tz": "Asia/Srednekolymsk",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Taipei",
+    "countries": ["Taiwan"]
+  },
+  {
+    "tz": "Asia/Tashkent",
+    "countries": ["Uzbekistan"]
+  },
+  {
+    "tz": "Asia/Tbilisi",
+    "countries": ["Georgia"]
+  },
+  {
+    "tz": "Asia/Tehran",
+    "countries": ["Iran"]
+  },
+  {
+    "tz": "Asia/Thimphu",
+    "countries": ["Bhutan"]
+  },
+  {
+    "tz": "Asia/Tokyo",
+    "countries": ["Japan"]
+  },
+  {
+    "tz": "Asia/Tomsk",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Ulaanbaatar",
+    "countries": ["Mongolia"]
+  },
+  {
+    "tz": "Asia/Urumqi",
+    "countries": ["China"]
+  },
+  {
+    "tz": "Asia/Ust-Nera",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Vientiane",
+    "countries": ["Laos"]
+  },
+  {
+    "tz": "Asia/Vladivostok",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Yakutsk",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Yangon",
+    "countries": ["Myanmar (Burma)"]
+  },
+  {
+    "tz": "Asia/Yekaterinburg",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Asia/Yerevan",
+    "countries": ["Armenia"]
+  },
+  {
+    "tz": "Atlantic/Azores",
+    "countries": ["Portugal"]
+  },
+  {
+    "tz": "Atlantic/Bermuda",
+    "countries": ["Bermuda"]
+  },
+  {
+    "tz": "Atlantic/Canary",
+    "countries": ["Spain"]
+  },
+  {
+    "tz": "Atlantic/Cape_Verde",
+    "countries": ["Cape Verde"]
+  },
+  {
+    "tz": "Atlantic/Faroe",
+    "countries": ["Faroe Islands"]
+  },
+  {
+    "tz": "Atlantic/Madeira",
+    "countries": ["Portugal"]
+  },
+  {
+    "tz": "Atlantic/Reykjavik",
+    "countries": ["Iceland"]
+  },
+  {
+    "tz": "Atlantic/South_Georgia",
+    "countries": ["South Georgia & the South Sandwich Islands"]
+  },
+  {
+    "tz": "Atlantic/St_Helena",
+    "countries": ["St Helena"]
+  },
+  {
+    "tz": "Atlantic/Stanley",
+    "countries": ["Falkland Islands"]
+  },
+  {
+    "tz": "Australia/Adelaide",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Australia/Brisbane",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Australia/Broken_Hill",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Australia/Darwin",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Australia/Eucla",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Australia/Hobart",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Australia/Lindeman",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Australia/Lord_Howe",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Australia/Melbourne",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Australia/Perth",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Australia/Sydney",
+    "countries": ["Australia"]
+  },
+  {
+    "tz": "Europe/Amsterdam",
+    "countries": ["Netherlands"]
+  },
+  {
+    "tz": "Europe/Andorra",
+    "countries": ["Andorra"]
+  },
+  {
+    "tz": "Europe/Astrakhan",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Europe/Athens",
+    "countries": ["Greece"]
+  },
+  {
+    "tz": "Europe/Belgrade",
+    "countries": ["Serbia"]
+  },
+  {
+    "tz": "Europe/Berlin",
+    "countries": ["Germany"]
+  },
+  {
+    "tz": "Europe/Bratislava",
+    "countries": ["Slovakia"]
+  },
+  {
+    "tz": "Europe/Brussels",
+    "countries": ["Belgium"]
+  },
+  {
+    "tz": "Europe/Bucharest",
+    "countries": ["Romania"]
+  },
+  {
+    "tz": "Europe/Budapest",
+    "countries": ["Hungary"]
+  },
+  {
+    "tz": "Europe/Busingen",
+    "countries": ["Germany"]
+  },
+  {
+    "tz": "Europe/Chisinau",
+    "countries": ["Moldova"]
+  },
+  {
+    "tz": "Europe/Copenhagen",
+    "countries": ["Denmark"]
+  },
+  {
+    "tz": "Europe/Dublin",
+    "countries": ["Ireland"]
+  },
+  {
+    "tz": "Europe/Gibraltar",
+    "countries": ["Gibraltar"]
+  },
+  {
+    "tz": "Europe/Guernsey",
+    "countries": ["Guernsey"]
+  },
+  {
+    "tz": "Europe/Helsinki",
+    "countries": ["Finland"]
+  },
+  {
+    "tz": "Europe/Isle_of_Man",
+    "countries": ["Isle of Man"]
+  },
+  {
+    "tz": "Europe/Istanbul",
+    "countries": ["Turkey"]
+  },
+  {
+    "tz": "Europe/Jersey",
+    "countries": ["Jersey"]
+  },
+  {
+    "tz": "Europe/Kaliningrad",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Europe/Kirov",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Europe/Kyiv",
+    "countries": ["Ukraine"]
+  },
+  {
+    "tz": "Europe/Lisbon",
+    "countries": ["Portugal"]
+  },
+  {
+    "tz": "Europe/Ljubljana",
+    "countries": ["Slovenia"]
+  },
+  {
+    "tz": "Europe/London",
+    "countries": ["Britain (UK)"]
+  },
+  {
+    "tz": "Europe/Luxembourg",
+    "countries": ["Luxembourg"]
+  },
+  {
+    "tz": "Europe/Madrid",
+    "countries": ["Spain"]
+  },
+  {
+    "tz": "Europe/Malta",
+    "countries": ["Malta"]
+  },
+  {
+    "tz": "Europe/Mariehamn",
+    "countries": ["Åland Islands"]
+  },
+  {
+    "tz": "Europe/Minsk",
+    "countries": ["Belarus"]
+  },
+  {
+    "tz": "Europe/Monaco",
+    "countries": ["Monaco"]
+  },
+  {
+    "tz": "Europe/Moscow",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Europe/Oslo",
+    "countries": ["Norway"]
+  },
+  {
+    "tz": "Europe/Paris",
+    "countries": ["France"]
+  },
+  {
+    "tz": "Europe/Podgorica",
+    "countries": ["Montenegro"]
+  },
+  {
+    "tz": "Europe/Prague",
+    "countries": ["Czech Republic"]
+  },
+  {
+    "tz": "Europe/Riga",
+    "countries": ["Latvia"]
+  },
+  {
+    "tz": "Europe/Rome",
+    "countries": ["Italy"]
+  },
+  {
+    "tz": "Europe/Samara",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Europe/San_Marino",
+    "countries": ["San Marino"]
+  },
+  {
+    "tz": "Europe/Sarajevo",
+    "countries": ["Bosnia & Herzegovina"]
+  },
+  {
+    "tz": "Europe/Saratov",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Europe/Simferopol",
+    "countries": ["Ukraine"]
+  },
+  {
+    "tz": "Europe/Skopje",
+    "countries": ["North Macedonia"]
+  },
+  {
+    "tz": "Europe/Sofia",
+    "countries": ["Bulgaria"]
+  },
+  {
+    "tz": "Europe/Stockholm",
+    "countries": ["Sweden"]
+  },
+  {
+    "tz": "Europe/Tallinn",
+    "countries": ["Estonia"]
+  },
+  {
+    "tz": "Europe/Tirane",
+    "countries": ["Albania"]
+  },
+  {
+    "tz": "Europe/Ulyanovsk",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Europe/Vaduz",
+    "countries": ["Liechtenstein"]
+  },
+  {
+    "tz": "Europe/Vatican",
+    "countries": ["Vatican City"]
+  },
+  {
+    "tz": "Europe/Vienna",
+    "countries": ["Austria"]
+  },
+  {
+    "tz": "Europe/Vilnius",
+    "countries": ["Lithuania"]
+  },
+  {
+    "tz": "Europe/Volgograd",
+    "countries": ["Russia"]
+  },
+  {
+    "tz": "Europe/Warsaw",
+    "countries": ["Poland"]
+  },
+  {
+    "tz": "Europe/Zagreb",
+    "countries": ["Croatia"]
+  },
+  {
+    "tz": "Europe/Zurich",
+    "countries": ["Switzerland"]
+  },
+  {
+    "tz": "Indian/Antananarivo",
+    "countries": ["Madagascar"]
+  },
+  {
+    "tz": "Indian/Chagos",
+    "countries": ["British Indian Ocean Territory"]
+  },
+  {
+    "tz": "Indian/Christmas",
+    "countries": ["Christmas Island"]
+  },
+  {
+    "tz": "Indian/Cocos",
+    "countries": ["Cocos (Keeling) Islands"]
+  },
+  {
+    "tz": "Indian/Comoro",
+    "countries": ["Comoros"]
+  },
+  {
+    "tz": "Indian/Kerguelen",
+    "countries": ["French S. Terr."]
+  },
+  {
+    "tz": "Indian/Mahe",
+    "countries": ["Seychelles"]
+  },
+  {
+    "tz": "Indian/Maldives",
+    "countries": ["Maldives"]
+  },
+  {
+    "tz": "Indian/Mauritius",
+    "countries": ["Mauritius"]
+  },
+  {
+    "tz": "Indian/Mayotte",
+    "countries": ["Mayotte"]
+  },
+  {
+    "tz": "Indian/Reunion",
+    "countries": ["Réunion"]
+  },
+  {
+    "tz": "Pacific/Apia",
+    "countries": ["Samoa (western)"]
+  },
+  {
+    "tz": "Pacific/Auckland",
+    "countries": ["New Zealand"]
+  },
+  {
+    "tz": "Pacific/Bougainville",
+    "countries": ["Papua New Guinea"]
+  },
+  {
+    "tz": "Pacific/Chatham",
+    "countries": ["New Zealand"]
+  },
+  {
+    "tz": "Pacific/Chuuk",
+    "countries": ["Micronesia"]
+  },
+  {
+    "tz": "Pacific/Easter",
+    "countries": ["Chile"]
+  },
+  {
+    "tz": "Pacific/Efate",
+    "countries": ["Vanuatu"]
+  },
+  {
+    "tz": "Pacific/Fakaofo",
+    "countries": ["Tokelau"]
+  },
+  {
+    "tz": "Pacific/Fiji",
+    "countries": ["Fiji"]
+  },
+  {
+    "tz": "Pacific/Funafuti",
+    "countries": ["Tuvalu"]
+  },
+  {
+    "tz": "Pacific/Galapagos",
+    "countries": ["Ecuador"]
+  },
+  {
+    "tz": "Pacific/Gambier",
+    "countries": ["French Polynesia"]
+  },
+  {
+    "tz": "Pacific/Guadalcanal",
+    "countries": ["Solomon Islands"]
+  },
+  {
+    "tz": "Pacific/Guam",
+    "countries": ["Guam"]
+  },
+  {
+    "tz": "Pacific/Honolulu",
+    "countries": ["United States"]
+  },
+  {
+    "tz": "Pacific/Kanton",
+    "countries": ["Kiribati"]
+  },
+  {
+    "tz": "Pacific/Kiritimati",
+    "countries": ["Kiribati"]
+  },
+  {
+    "tz": "Pacific/Kosrae",
+    "countries": ["Micronesia"]
+  },
+  {
+    "tz": "Pacific/Kwajalein",
+    "countries": ["Marshall Islands"]
+  },
+  {
+    "tz": "Pacific/Majuro",
+    "countries": ["Marshall Islands"]
+  },
+  {
+    "tz": "Pacific/Marquesas",
+    "countries": ["French Polynesia"]
+  },
+  {
+    "tz": "Pacific/Midway",
+    "countries": ["US minor outlying islands"]
+  },
+  {
+    "tz": "Pacific/Nauru",
+    "countries": ["Nauru"]
+  },
+  {
+    "tz": "Pacific/Niue",
+    "countries": ["Niue"]
+  },
+  {
+    "tz": "Pacific/Norfolk",
+    "countries": ["Norfolk Island"]
+  },
+  {
+    "tz": "Pacific/Noumea",
+    "countries": ["New Caledonia"]
+  },
+  {
+    "tz": "Pacific/Pago_Pago",
+    "countries": ["Samoa (American)"]
+  },
+  {
+    "tz": "Pacific/Palau",
+    "countries": ["Palau"]
+  },
+  {
+    "tz": "Pacific/Pitcairn",
+    "countries": ["Pitcairn"]
+  },
+  {
+    "tz": "Pacific/Pohnpei",
+    "countries": ["Micronesia"]
+  },
+  {
+    "tz": "Pacific/Port_Moresby",
+    "countries": ["Papua New Guinea"]
+  },
+  {
+    "tz": "Pacific/Rarotonga",
+    "countries": ["Cook Islands"]
+  },
+  {
+    "tz": "Pacific/Saipan",
+    "countries": ["Northern Mariana Islands"]
+  },
+  {
+    "tz": "Pacific/Tahiti",
+    "countries": ["French Polynesia"]
+  },
+  {
+    "tz": "Pacific/Tarawa",
+    "countries": ["Kiribati"]
+  },
+  {
+    "tz": "Pacific/Tongatapu",
+    "countries": ["Tonga"]
+  },
+  {
+    "tz": "Pacific/Wake",
+    "countries": ["US minor outlying islands"]
+  },
+  {
+    "tz": "Pacific/Wallis",
+    "countries": ["Wallis & Futuna"]
+  }
+]
