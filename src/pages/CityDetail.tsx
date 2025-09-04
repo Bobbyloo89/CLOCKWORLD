@@ -1,21 +1,65 @@
+import { useEffect, useMemo, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import seedCities from "../data/cities.json";
+import type { SeedCity, CityEntry } from "../types";
+import { slugify } from "../utils/slug";
+import { loadUserCities, findUserCityBySlugs, toggleFavorite } from "../utils/storage";
+import DigitalClock from "../components/clock/DigitalClock";
 
 export default function CityDetail() {
-  const { country, city } = useParams<{ country: string; city: string }>();
+  const { country: countrySlug, city: citySlug } = useParams<{ country: string; city: string }>();
+
+  const seeds = seedCities as SeedCity[];
+  const [userList, setUserList] = useState<CityEntry[]>(() => loadUserCities());
+
+  // Find match in list of pre-added cities
+  const seedMatch = useMemo(
+    () => seeds.find(s => slugify(s.country) === countrySlug && slugify(s.city) === citySlug),
+    [seeds, countrySlug, citySlug]
+  );
+
+  // Find match in list of user-added cities
+  const userMatch = useMemo(
+    () => findUserCityBySlugs(userList, countrySlug ?? "", citySlug ?? ""),
+    [userList, countrySlug, citySlug]
+  );
+
+  // Show error if no match is found
+  if (!seedMatch && !userMatch) {
+    return (
+      <main>
+        <h2>City Detail</h2>
+        <p>Stad hittades inte.</p>
+        <p><Link to="/">Till Start</Link></p>
+      </main>
+    );
+  }
+
+  // Decide what data to show, prioritizing user-added cities where tz/favorite may have changed
+  const country = userMatch?.country ?? seedMatch!.country;
+  const city = userMatch?.city ?? seedMatch!.city;
+  const tz = userMatch?.tz ?? seedMatch!.tz;
+  const isFavorite = userMatch?.favorite === true;
+
+  function onToggleFavorite() {
+    const updated = toggleFavorite(country, city, tz);
+    setUserList(updated);
+  }
 
   return (
     <main>
-      <h2>City Detail</h2>
-      <p>Här kommer detaljerad info för specifik stad att visas.</p>
-      <p>
-        Country (slug): <strong>{country}</strong>
-      </p>
-      <p>
-        City (slug): <strong>{city}</strong>
-      </p>
-      <p>
-        <Link to="/">Länk till Start</Link>
-      </p>
+      <h2>{city}, {country}</h2>
+
+      {/* TODO: Lägg in analog klocka här */}
+      {/* <AnalogClock tz={tz} /> */}
+
+      <DigitalClock tz={tz} />
+
+      <button onClick={onToggleFavorite}>
+        {isFavorite ? "Remove Favorite" : "Add Favorite"}
+      </button>
+
+      <p><Link to="/">Till Start</Link></p>
     </main>
   );
 }
