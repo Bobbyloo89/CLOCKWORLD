@@ -12,3 +12,12 @@ export interface CityEntry {
   tz: string;
   favorite: boolean;
 }
+
+export interface Country {
+  name: string;
+}
+
+export interface IanaTz {
+  tz: string;
+  countries: string[];
+}
