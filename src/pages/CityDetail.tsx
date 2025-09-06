@@ -65,7 +65,7 @@ export default function CityDetail() {
       <h2>
         {city}, {country}
       </h2>
-      <AnalogClock />{" "}
+      <AnalogClock tz={tz} />
       {/* visar analog klocka (TODO: just nu visas systemets lokaltid) */}
       <DigitalClock tz={tz} />
       <button onClick={onToggleFavorite}>

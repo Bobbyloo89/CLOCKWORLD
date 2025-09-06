@@ -10,7 +10,8 @@ export default function clockAnimation({
   borderColor = "#800000",
   lineColor = "#000000",
   largeColor = "#800000",
-  secondColor = "#ff7f50",
+  secondColor = "#ff7f50", // Leave in, incase we add seconds again
+  timeZone = "",
 }) {
   const now = new Date();
   const context = (canvas as never as HTMLCanvasElement).getContext(
@@ -68,15 +69,27 @@ export default function clockAnimation({
   context.restore();
 
   // get current time
-  const hr = now.getHours() % 12;
-  const mins = now.getMinutes();
-  const secs = (now.getTime() % 60000) / 1000;
+  let hr = now.getHours() % 12;
+  let mins = now.getMinutes();
+  // const secs = (now.getTime() % 60000) / 1000; // ADD IF USING SECONDS
+
+  if (timeZone) {
+    const parts = new Intl.DateTimeFormat("en-GB", {
+      hour: "numeric",
+      minute: "numeric",
+      hour12: false,
+      timeZone,
+    }).formatToParts(now);
+    const h = parts.find((p) => p.type === "hour")?.value;
+    const m = parts.find((p) => p.type === "minute")?.value;
+    if (h != null) hr = Number(h) % 12;
+    if (m != null) mins = Number(m);
+  }
 
   // draw hour hand
   context.save();
   context.rotate(
-    (Math.PI / 6) * hr + (Math.PI / 360) * mins + (Math.PI / 21600) * secs
-  );
+    (Math.PI / 6) * hr + (Math.PI / 360) * mins); // ADD "+ (Math.PI / 21600) * secs" IF USING SECONDS
   context.strokeStyle = largeColor;
   context.lineWidth = 14;
   context.beginPath();
@@ -87,7 +100,7 @@ export default function clockAnimation({
 
   // draw the min hand
   context.save();
-  context.rotate((Math.PI / 30) * mins + (Math.PI / 1800) * secs);
+  context.rotate((Math.PI / 30) * mins); // ADD "+ (Math.PI / 1800) * secs" IF USING SECONDS
   context.strokeStyle = largeColor;
   context.lineWidth = 10;
   context.beginPath();
@@ -96,27 +109,36 @@ export default function clockAnimation({
   context.stroke();
   context.restore();
 
+  // ADD IF USING SECONDS
   // draw sec hand
-  context.save();
-  context.rotate((Math.PI / 30) * secs);
-  context.strokeStyle = secondColor;
-  context.fillStyle = secondColor;
-  context.lineWidth = 6;
-  context.beginPath();
-  context.moveTo(-30, 0);
-  context.lineTo(100, 0);
-  context.stroke();
-  context.beginPath();
-  context.arc(0, 0, 10, 0, Math.PI * 2, true);
-  context.fill();
-  context.restore();
+  // context.save();
+  // context.rotate((Math.PI / 30) * secs);
+  // context.strokeStyle = secondColor;
+  // context.fillStyle = secondColor;
+  // context.lineWidth = 6;
+  // context.beginPath();
+  // context.moveTo(-30, 0);
+  // context.lineTo(100, 0);
+  // context.stroke();
+  // context.beginPath();
+  // context.arc(0, 0, 10, 0, Math.PI * 2, true);
+  // context.fill();
+  // context.restore();
 
   context.restore(); //this restores default state
 
   // Remember the latest call to requestAnimationFrame
   // so we can cancel it (in a useEffect in AnalogClock.tsx)
   requestAnimationFrameHolder.latest = requestAnimationFrame(() =>
-    clockAnimation({ canvas })
+    clockAnimation({
+      canvas,
+      faceColor,
+      borderColor,
+      lineColor,
+      largeColor,
+      secondColor,
+      timeZone,
+    })
   );
 
   return requestAnimationFrameHolder;
