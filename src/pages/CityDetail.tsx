@@ -3,18 +3,30 @@ import { useParams, Link } from "react-router-dom";
 import seedCities from "../data/cities.json";
 import type { SeedCity, CityEntry } from "../types";
 import { slugify } from "../utils/slug";
-import { loadUserCities, findUserCityBySlugs, toggleFavorite } from "../utils/storage";
+import {
+  loadUserCities,
+  findUserCityBySlugs,
+  toggleFavorite,
+} from "../utils/storage";
 import DigitalClock from "../components/clock/DigitalClock";
+import AnalogClock from "../components/clock/AnalogClock";
 
 export default function CityDetail() {
-  const { country: countrySlug, city: citySlug } = useParams<{ country: string; city: string }>();
+  const { country: countrySlug, city: citySlug } = useParams<{
+    country: string;
+    city: string;
+  }>();
 
   const seeds = seedCities as SeedCity[];
   const [userList, setUserList] = useState<CityEntry[]>(() => loadUserCities());
 
   // Find match in list of pre-added cities
   const seedMatch = useMemo(
-    () => seeds.find(s => slugify(s.country) === countrySlug && slugify(s.city) === citySlug),
+    () =>
+      seeds.find(
+        (s) =>
+          slugify(s.country) === countrySlug && slugify(s.city) === citySlug
+      ),
     [seeds, countrySlug, citySlug]
   );
 
@@ -30,7 +42,9 @@ export default function CityDetail() {
       <main>
         <h2>City Detail</h2>
         <p>Stad hittades inte.</p>
-        <p><Link to="/">Till Start</Link></p>
+        <p>
+          <Link to="/">Till Start</Link>
+        </p>
       </main>
     );
   }
@@ -48,18 +62,18 @@ export default function CityDetail() {
 
   return (
     <main>
-      <h2>{city}, {country}</h2>
-
-      {/* TODO: Lägg in analog klocka här */}
-      {/* <AnalogClock tz={tz} /> */}
-
+      <h2>
+        {city}, {country}
+      </h2>
+      <AnalogClock />{" "}
+      {/* visar analog klocka (TODO: just nu visas systemets lokaltid) */}
       <DigitalClock tz={tz} />
-
       <button onClick={onToggleFavorite}>
         {isFavorite ? "Remove Favorite" : "Add Favorite"}
       </button>
-
-      <p><Link to="/">Till Start</Link></p>
+      <p>
+        <Link to="/">Till Start</Link>
+      </p>
     </main>
   );
 }
