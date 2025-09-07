@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import citiesData from "../data/cities.json";
 import type { SeedCity } from "../types";
 import CityCard from "../components/city/CityCard";
@@ -6,6 +6,7 @@ import CityCard from "../components/city/CityCard";
 export default function Home() {
   const cities = citiesData as SeedCity[];
   const featured = cities.filter(c => c.featured === true);
+  const navigate = useNavigate();
 
   return (
     <main>
@@ -14,9 +15,7 @@ export default function Home() {
         <CityCard key={`${c.country}__${c.city}`} data={c} />
       ))}
 
-      <p>
-        <Link to="/add">Add City</Link>
-      </p>
+      <button type="button" onClick={() => navigate("/add")}>Add City</button>
     </main>
   );
 }
