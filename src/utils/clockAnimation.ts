@@ -17,11 +17,11 @@ type ClockParams = {
 
 export default function clockAnimation({
   canvas = null,
-  faceColor = "#635bd3ff",
-  borderColor = "#800000",
+  faceColor = "#ffffffff",
+  borderColor = "#2A2A72",
   lineColor = "#000000",
-  largeColor = "#800000",
-  secondColor = "#ff7f50", // Leave in, incase we add seconds again
+  largeColor = "#2A2A72",
+  secondColor = "#cf2323ff", // Leave in, incase we add seconds again
   timeZone = "",
   // ##################################################################################
   noLoop = false, // REMOVE IF USING SECONDS

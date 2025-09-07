@@ -13,11 +13,18 @@ body {
 }
 
 .clock-container {
-  height: calc(100vh - 40px);
+  /* height: calc(100vh - 40px); */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+}
+
+/* Visa klockan mindre men rita fortfarande i 500×500 internt */
+.clock-container canvas {
+  width: 300px;   /* din visningsstorlek */
+  height: 300px;  /* matcha för kvadratisk skala */
 }
 
 button {
