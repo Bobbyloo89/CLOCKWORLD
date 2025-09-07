@@ -4,6 +4,17 @@
 
 const requestAnimationFrameHolder = { latest: 0 };
 
+type ClockParams = {
+  canvas?: HTMLCanvasElement | null;
+  faceColor?: string;
+  borderColor?: string;
+  lineColor?: string;
+  largeColor?: string;
+  secondColor?: string;
+  timeZone?: string;
+  noLoop?: boolean;
+};
+
 export default function clockAnimation({
   canvas = null,
   faceColor = "#635bd3ff",
@@ -12,7 +23,10 @@ export default function clockAnimation({
   largeColor = "#800000",
   secondColor = "#ff7f50", // Leave in, incase we add seconds again
   timeZone = "",
-}) {
+  // ##################################################################################
+  noLoop = false, // REMOVE IF USING SECONDS
+}: // ##################################################################################
+ClockParams) {
   const now = new Date();
   const context = (canvas as never as HTMLCanvasElement).getContext(
     "2d"
@@ -71,7 +85,9 @@ export default function clockAnimation({
   // get current time
   let hr = now.getHours() % 12;
   let mins = now.getMinutes();
+  // ####################################################################################
   // const secs = (now.getTime() % 60000) / 1000; // ADD IF USING SECONDS
+  // ####################################################################################
 
   if (timeZone) {
     const parts = new Intl.DateTimeFormat("en-GB", {
@@ -88,8 +104,9 @@ export default function clockAnimation({
 
   // draw hour hand
   context.save();
-  context.rotate(
-    (Math.PI / 6) * hr + (Math.PI / 360) * mins); // ADD "+ (Math.PI / 21600) * secs" IF USING SECONDS
+  // ################################################################################################################
+  context.rotate((Math.PI / 6) * hr + (Math.PI / 360) * mins); // ADD "+ (Math.PI / 21600) * secs" IF USING SECONDS
+  // ################################################################################################################
   context.strokeStyle = largeColor;
   context.lineWidth = 14;
   context.beginPath();
@@ -100,7 +117,9 @@ export default function clockAnimation({
 
   // draw the min hand
   context.save();
+  // ############################################################################################################
   context.rotate((Math.PI / 30) * mins); // ADD "+ (Math.PI / 1800) * secs" IF USING SECONDS
+  // ###########################################################################################################
   context.strokeStyle = largeColor;
   context.lineWidth = 10;
   context.beginPath();
@@ -109,6 +128,7 @@ export default function clockAnimation({
   context.stroke();
   context.restore();
 
+  // ######################################################################################################
   // ADD IF USING SECONDS
   // draw sec hand
   // context.save();
@@ -124,22 +144,46 @@ export default function clockAnimation({
   // context.arc(0, 0, 10, 0, Math.PI * 2, true);
   // context.fill();
   // context.restore();
+  // ####################################################################################################
 
   context.restore(); //this restores default state
 
+  // ###################################################################################################
+  // ADD IF USING SECONDS
+
   // Remember the latest call to requestAnimationFrame
   // so we can cancel it (in a useEffect in AnalogClock.tsx)
-  requestAnimationFrameHolder.latest = requestAnimationFrame(() =>
-    clockAnimation({
-      canvas,
-      faceColor,
-      borderColor,
-      lineColor,
-      largeColor,
-      secondColor,
-      timeZone,
-    })
-  );
+
+  // requestAnimationFrameHolder.latest = requestAnimationFrame(() =>
+  //   clockAnimation({
+  //     canvas,
+  //     faceColor,
+  //     borderColor,
+  //     lineColor,
+  //     largeColor,
+  //     secondColor,
+  //     timeZone,
+  //   })
+  // );
+  // ####################################################################################################
+
+  // ##################################################################################################
+  // REMOVE IF USING SECONDS
+  if (!noLoop) {
+    requestAnimationFrameHolder.latest = requestAnimationFrame(() =>
+      clockAnimation({
+        canvas,
+        faceColor,
+        borderColor,
+        lineColor,
+        largeColor,
+        secondColor,
+        timeZone,
+        noLoop,
+      })
+    );
+    // ##############################################################################################
+  }
 
   return requestAnimationFrameHolder;
 }

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { slugify } from "../../utils/slug";
 import DigitalClock from "../clock/DigitalClock";
+import AnalogClock from "../clock/AnalogClock";
 
 type CityLike = {
   city: string;
@@ -21,10 +22,12 @@ export default function CityCard({ data }: Props) {
   return (
     <article>
       <Link to={`/${countrySlug}/${citySlug}`}>
-        {imgSrc ? <img src={imgSrc} alt={`${data.city}, ${data.country}`} /> : null}
+        {imgSrc ? (
+          <img src={imgSrc} alt={`${data.city}, ${data.country}`} />
+        ) : null}
         <h3>{data.city}</h3>
         <h4>{data.country}</h4>
-        {/* TODO: Lägg in analog klocka här! */}
+        <AnalogClock tz={data.tz} />
         <DigitalClock tz={data.tz} />
       </Link>
     </article>
