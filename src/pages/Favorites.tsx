@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import type { CityEntry } from "../types";
 import { loadUserCities } from "../utils/storage";
-import { slugify } from "../utils/slug";
+import CityCard from "../components/city/CityCard";
 
 export default function Favorites() {
   const [list, setList] = useState<CityEntry[]>([]);
@@ -18,7 +17,6 @@ export default function Favorites() {
       <main>
         <h2>Favorites</h2>
         <p>No favorites yet.</p>
-        <p><Link to="/">Go to Start</Link></p>
       </main>
     );
   }
@@ -26,17 +24,9 @@ export default function Favorites() {
   return (
     <main>
       <h2>Favorites</h2>
-      <ul>
-        {favorites.map((c) => {
-          const countrySlug = slugify(c.country);
-          const citySlug = slugify(c.city);
-          return (
-            <li key={`${c.country}__${c.city}`}>
-              <Link to={`/${countrySlug}/${citySlug}`}>{c.city}, {c.country}</Link>
-            </li>
-          );
-        })}
-      </ul>
+      {favorites.map((c) => (
+        <CityCard key={`${c.country}__${c.city}`} data={c} />
+      ))}
     </main>
   );
 }
