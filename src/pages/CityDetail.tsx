@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useMemo, useState } from "react";
+import { useParams } from "react-router-dom";
 import seedCities from "../data/cities.json";
 import type { SeedCity, CityEntry } from "../types";
 import { slugify } from "../utils/slug";
@@ -42,9 +42,6 @@ export default function CityDetail() {
       <main>
         <h2>City Detail</h2>
         <p>Stad hittades inte.</p>
-        <p>
-          <Link to="/">Till Start</Link>
-        </p>
       </main>
     );
   }
@@ -66,14 +63,10 @@ export default function CityDetail() {
         {city}, {country}
       </h2>
       <AnalogClock tz={tz} />
-      {/* visar analog klocka (TODO: just nu visas systemets lokaltid) */}
       <DigitalClock tz={tz} />
       <button onClick={onToggleFavorite}>
         {isFavorite ? "Remove Favorite" : "Add Favorite"}
       </button>
-      <p>
-        <Link to="/">Till Start</Link>
-      </p>
     </main>
   );
 }
