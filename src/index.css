@@ -35,3 +35,23 @@ main {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+/* färg + storlek för home-ikon */
+header a[aria-label="Home"] svg {
+  width: 40px;
+  height: 40px;
+  color: #fff; /* fill följer currentColor */
+}
+header a[aria-label="Home"]:hover svg {
+  color: #9aa0a6;
+}
+
+/* burger-knapp */
+header button[aria-label="Open menu"] svg {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+header button[aria-label="Open menu"]:hover svg {
+  color: #9aa0a6;
+}
