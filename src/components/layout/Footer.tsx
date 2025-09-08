@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      © 2025 CLOCKWORLD
+      <p>© Mikael Lindstedt 2025</p>
     </footer>
   );
 }
