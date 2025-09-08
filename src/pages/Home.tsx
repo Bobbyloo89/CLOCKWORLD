@@ -14,7 +14,7 @@ export default function Home() {
         <CityCard key={`${c.country}__${c.city}`} data={c} />
       ))}
 
-      <button type="button" onClick={() => navigate("/add")}>Add City</button>
+      <button className="add-city-button" type="button" onClick={() => navigate("/add")}>Add City</button>
     </main>
   );
 }

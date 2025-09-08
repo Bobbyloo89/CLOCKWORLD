@@ -9,8 +9,10 @@ export default function DigitalClock({ tz }: Props) {
   const now = useMinuteNow();
   return (
     <>
-      <div>{formatTime(now, tz)}</div>
-      <div>{formatDate(now, tz)}</div>
+      <div className="digital-clock-wrapper">
+        <h3>{formatTime(now, tz)}</h3>
+        <h4>{formatDate(now, tz)}</h4>
+      </div>
     </>
   );
 }

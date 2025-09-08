@@ -20,7 +20,7 @@ export default function CityCard({ data }: Props) {
   const imgSrc = data.img ? import.meta.env.BASE_URL + data.img : undefined;
 
   return (
-    <article>
+    <article className="city-card-wrapper">
       <Link to={`/${countrySlug}/${citySlug}`}>
         {imgSrc ? (
           <img src={imgSrc} alt={`${data.city}, ${data.country}`} />

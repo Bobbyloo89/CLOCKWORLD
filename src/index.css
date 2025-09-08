@@ -47,6 +47,10 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e3e3e3;
+}
+main {
+  min-height: 82svh;
 }
 img,
 svg,
@@ -196,6 +200,56 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ############### STYLING FOR CITYCARDS ############### */
+
+.city-card-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4svh;
+  padding-bottom: 4svh;
+}
+.city-card-wrapper a {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.city-card-wrapper h3 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: #2a2a72;
+}
+.city-card-wrapper h4 {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+  color: #2a2a72;
+}
+
+/* ############### STYLING FOR DIGITAL CLOCK ############### */
+
+.digital-clock-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.digital-clock-wrapper h3 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #2a2a72;
 }
 
 /* ################################################################################################################################ */
