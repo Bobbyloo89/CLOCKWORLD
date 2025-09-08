@@ -1,22 +1,53 @@
+/* 
+###### FONTS ######
+
+font-family: "Orbitron", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+
+font-family: "Limelight", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "Archivo Black", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "Merriweather", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:
+"wdth" 100;
+
+font-family: "Roboto Slab", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal
+
+####### COLORS ######
+
+Main: EC9A29
+Secondary: 009FFD
+Text: 2A2A72
+Background: E3E3E3
+
+*/
+
+/* ############### BASELINE STYLING ############### */
 * {
   box-sizing: border-box;
-}
-
-html,
-body,
-#root {
-  height: 100%;
-}
-
-body {
   margin: 0;
+  padding: 0;
+}
+body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", Ubuntu,
     Cantarell, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 img,
 svg,
 video,
@@ -29,29 +60,174 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-main {
-  padding: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
+/* ############### HEADER ############### */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ec9a29;
+  height: 10svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Home-icon top-left */
+.header-home-wrap {
+  display: inline-grid;
+  place-items: center;
+  width: 10svh;
+  height: 10svh;
+  padding: 2.5svh;
+}
+.header-home-wrap a {
+  display: inline-grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: #2a2a72;
+}
+.header-home-wrap svg {
+  width: 100%;
+  height: 100%;
+}
+.header-home-wrap a:hover svg {
+  color: #009ffd;
+}
+/* Title in header */
+.header-title {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7rem;
+  color: #2a2a72;
+}
+/* Burger-menu top-right */
+.header-menu-wrap {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 10svh;
+  height: 10svh;
+  padding: 2.5svh;
+}
+.header-menu-btn {
+  display: inline-grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #2a2a72;
+}
+.header-menu-btn:hover {
+  color: #009ffd;
+}
+.header-menu-btn svg {
+  width: 100%;
+  height: 100%;
+}
+/* ############### BURGER-MENU-DROPDOWN ############### */
+/* Hiding Nav-menu <ul> in mobile-view */
+#header-menu[hidden] {
+  display: none;
+}
+#header-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  list-style: none;
+  padding: 1svh;
+  min-width: 50svw;
+  background: #ec9a29;
+  transform-origin: top right;
+  animation: dropdown-in 120ms ease-out both;
+}
+/* Burger-menu-dropdown animation */
+@keyframes dropdown-in {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#header-menu li {
+  margin: 0;
+}
+#header-menu a {
+  display: block;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #2a2a72;
+  padding: 1svh;
+  text-decoration: none;
+}
+#header-menu a:hover {
+  background: #009ffd;
 }
 
-/* färg + storlek för home-ikon */
-header a[aria-label="Home"] svg {
-  width: 40px;
-  height: 40px;
-  color: #fff; /* fill följer currentColor */
-}
-header a[aria-label="Home"]:hover svg {
-  color: #9aa0a6;
-}
+/* ################################################################################################################################ */
+/* ####################################################     DESKTOP     ########################################################### */
+/* ################################################################################################################################ */
 
-/* burger-knapp */
-header button[aria-label="Open menu"] svg {
-  width: 40px;
-  height: 40px;
-  color: #fff;
-}
-header button[aria-label="Open menu"]:hover svg {
-  color: #9aa0a6;
+@media (min-width: 768px) {
+  /* ############### HEADER ############### */
+
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  /* Header-nav-menu */
+  /* Hide burger-menu-dropdown-button*/
+  .header-menu-btn {
+    display: none;
+  }
+  .header-menu-wrap {
+    position: static;
+    width: auto;
+    display: flex;
+  }
+  #header-menu {
+    position: static;
+    display: flex !important;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    animation: none;
+  }
+  #header-menu li {
+    list-style: none;
+  }
+  #header-menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  #header-menu a:hover {
+    background: #009ffd;
+  }
 }
