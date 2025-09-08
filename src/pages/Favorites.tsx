@@ -18,7 +18,6 @@ export default function Favorites() {
   if (favorites.length === 0) {
     return (
       <main>
-        <h2>Favorites</h2>
         <p>No favorites yet.</p>
         <button type="button" onClick={() => navigate("/add")}>Add City</button>
       </main>
@@ -27,7 +26,6 @@ export default function Favorites() {
 
   return (
     <main>
-      <h2>Favorites</h2>
       {favorites.map((c) => (
         <CityCard key={`${c.country}__${c.city}`} data={c} />
       ))}

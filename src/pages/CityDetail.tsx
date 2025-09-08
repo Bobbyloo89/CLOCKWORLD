@@ -40,7 +40,6 @@ export default function CityDetail() {
   if (!seedMatch && !userMatch) {
     return (
       <main>
-        <h2>City Detail</h2>
         <p>Stad hittades inte.</p>
       </main>
     );

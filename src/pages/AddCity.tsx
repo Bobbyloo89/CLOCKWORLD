@@ -111,7 +111,6 @@ export default function AddCity() {
 
   return (
     <main>
-      <h2>Add City</h2>
 
       <form onSubmit={onSubmit}>
         <label>

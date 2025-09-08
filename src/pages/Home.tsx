@@ -10,7 +10,6 @@ export default function Home() {
 
   return (
     <main>
-      <h2>Start</h2>
       {featured.map((c) => (
         <CityCard key={`${c.country}__${c.city}`} data={c} />
       ))}
