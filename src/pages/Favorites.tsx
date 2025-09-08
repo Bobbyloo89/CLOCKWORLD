@@ -29,7 +29,7 @@ export default function Favorites() {
       {favorites.map((c) => (
         <CityCard key={`${c.country}__${c.city}`} data={c} />
       ))}
-      <button type="button" onClick={() => navigate("/add")}>Add City</button>
+      <button className="add-city-button" type="button" onClick={() => navigate("/add")}>Add new city</button>
     </main>
   );
 }
