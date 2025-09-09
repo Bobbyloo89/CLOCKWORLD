@@ -58,14 +58,15 @@ export default function CityDetail() {
 
   return (
     <main>
-      <h2>
-        {city}, {country}
-      </h2>
-      <AnalogClock tz={tz} />
-      <DigitalClock tz={tz} />
-      <button onClick={onToggleFavorite}>
-        {isFavorite ? "Remove Favorite" : "Add Favorite"}
-      </button>
+      <div className="city-details-wrapper">
+        <h2>{city}</h2>
+        <h3>{country}</h3>
+        <AnalogClock tz={tz} />
+        <DigitalClock tz={tz} />
+        <button className="add-city-button" onClick={onToggleFavorite}>
+          {isFavorite ? "Remove Favorite" : "Add Favorite"}
+        </button>
+      </div>
     </main>
   );
 }

@@ -11,7 +11,7 @@ export default function DigitalClock({ tz }: Props) {
     <>
       <div className="digital-clock-wrapper">
         <h3>{formatTime(now, tz)}</h3>
-        <h4>{formatDate(now, tz)}</h4>
+        <p>{formatDate(now, tz)}</p>
       </div>
     </>
   );
