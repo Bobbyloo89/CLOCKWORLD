@@ -5,11 +5,13 @@ import Favorites from "../pages/Favorites";
 import CityDetail from "../pages/CityDetail";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import ScrollToTop from "../components/routing/ScrollToTop";
 
 function AppRoutes() {
   const location = useLocation();
   return (
     <>
+      <ScrollToTop />
       <Header pathname={location.pathname} />
       <Routes>
         <Route path="/" element={<Home />} />
