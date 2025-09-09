@@ -334,7 +334,8 @@ footer {
   padding-top: 4svh;
   padding-bottom: 4svh;
 }
-.city-details-wrapper h2, h3 {
+.city-details-wrapper h2,
+h3 {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -434,5 +435,30 @@ footer {
   }
   #header-menu a:hover {
     background: #009ffd;
+  }
+  .home-wrapper,
+  .favorites-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+  /* ############### STYLING FOR CITYCARDS ############### */
+
+  .city-card-wrapper {
+    width: 33svw;
+    padding-top: 4svh;
+    padding-bottom: 4svh;
+  }
+  .city-card-wrapper h3 {
+    font-size: 1.5rem;
+  }
+  .city-card-wrapper h4 {
+    font-size: 1rem;
+  }
+  .home-wrapper .clock-container,
+  .favorites-wrapper .clock-container {
+    width: 15svw;
+    height: 15svw;
   }
 }
