@@ -1,23 +1,31 @@
 import { useEffect, useState } from "react";
 
-// date-object that is updated every minute
+// Date-object that is updated every minute
+// Lets components share a single "now" without having to read system time individually
 
 export function useMinuteNow(): Date {
   const [now, setNow] = useState(() => new Date());
 
   useEffect(() => {
-    // ms until next minute
+    // ms until next "minute-shift"
     const n = new Date();
-    const msToNextMinute = (60 - n.getSeconds()) * 1000 - n.getMilliseconds();
+    const msIntoMinute = n.getSeconds() * 1000 + n.getMilliseconds();
+    let msToNextMinute = 60_000 - msIntoMinute;
+    if (msToNextMinute === 60_000) msToNextMinute = 0;
 
-    const timeout = setTimeout(() => {
+    let intervalId: number | undefined;
+
+    const timeoutId = window.setTimeout(() => {
+      // Snap to new minute and start new timer
       setNow(new Date());
-      const interval = setInterval(() => setNow(new Date()), 60_000);
-      // clear interval when hook is unmounted
-      return () => clearInterval(interval);
+      intervalId = window.setInterval(() => setNow(new Date()), 60_000);
     }, msToNextMinute);
 
-    return () => clearTimeout(timeout);
+    // Clear pending timeout and live interval
+    return () => {
+      window.clearTimeout(timeoutId);
+      if (intervalId !== undefined) window.clearInterval(intervalId);
+    };
   }, []);
 
   return now;
