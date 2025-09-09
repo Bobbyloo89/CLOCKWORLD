@@ -299,6 +299,13 @@ footer {
   block-size: 1.2rem;
   accent-color: #2a2a72;
 }
+.form-message {
+  font-size: 1.2rem;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  margin: 10px;
+}
 
 /* ############### STYLING FOR ADD-CITY-BUTTON (used in Home- and Favorites-page ############### */
 
