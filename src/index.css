@@ -1,19 +1,17 @@
 /* 
-###### FONTS ######
+########## FONTS ##########
 
-font-family: "Orbitron", sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
-
+TITLE:
 font-family: "Limelight", sans-serif;
 font-weight: 400;
 font-style: normal;
 
+MAIN:
 font-family: "Archivo Black", sans-serif;
 font-weight: 400;
 font-style: normal;
 
+SECONDARY:
 font-family: "Merriweather", serif;
 font-optical-sizing: auto;
 font-weight: 400;
@@ -21,17 +19,24 @@ font-style: normal;
 font-variation-settings:
 "wdth" 100;
 
+NUMBERS (Digital clock):
+font-family: "Orbitron", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+
+BUTTONS:
 font-family: "Roboto Slab", serif;
 font-optical-sizing: auto;
 font-weight: 400;
-font-style: normal
+font-style: normal;
 
-####### COLORS ######
+########## COLORS ##########
 
-Main: EC9A29
-Secondary: 009FFD
-Text: 2A2A72
-Background: E3E3E3
+Main: #EC9A29
+Secondary: #009FFD
+Text: #2A2A72
+Background: #E3E3E3
 
 */
 
@@ -83,7 +88,6 @@ header nav {
   align-items: center;
   justify-content: space-between;
 }
-/* Home-icon top-left */
 .header-home-wrap {
   display: inline-grid;
   place-items: center;
@@ -105,7 +109,6 @@ header nav {
 .header-home-wrap a:hover svg {
   color: #009ffd;
 }
-/* Title in header */
 .header-title {
   font-family: "Limelight", sans-serif;
   font-weight: 400;
@@ -113,7 +116,6 @@ header nav {
   font-size: 1.7rem;
   color: #2a2a72;
 }
-/* Burger-menu top-right */
 .header-menu-wrap {
   position: relative;
   display: inline-grid;
@@ -139,7 +141,9 @@ header nav {
   width: 100%;
   height: 100%;
 }
+
 /* ############### BURGER-MENU-DROPDOWN ############### */
+
 /* Hiding Nav-menu <ul> in mobile-view */
 #header-menu[hidden] {
   display: none;
@@ -342,7 +346,7 @@ footer {
   padding-bottom: 4svh;
 }
 .city-details-wrapper h2,
-h3 {
+.city-details-wrapper h3 {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -399,6 +403,7 @@ h3 {
 /* ################################################################################################################################ */
 
 @media (min-width: 768px) {
+
   /* ############### HEADER ############### */
 
   header nav {
@@ -450,6 +455,7 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
   }
+  
   /* ############### STYLING FOR CITYCARDS ############### */
 
   .city-card-wrapper {
