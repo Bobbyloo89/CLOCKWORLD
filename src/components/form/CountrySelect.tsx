@@ -7,12 +7,12 @@ type Props = {
 export default function CountrySelect({ countries, value, onChange }: Props) {
   return (
     <label>
-      Country
+      {/* Country */}
       <input
         list="countries-list"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder="Start typing a country…"
+        placeholder="Choose country…"
         autoComplete="off"
       />
       <datalist id="countries-list">

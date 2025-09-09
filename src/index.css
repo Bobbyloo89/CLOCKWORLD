@@ -236,7 +236,73 @@ footer {
   color: #2a2a72;
 }
 
-/* ############### STYLING FOR HOME-PAGE ############### */
+/* ############### STYLING FOR ADD-CITY-PAGE ############### */
+
+.add-city-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.add-city-form {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5svh 0;
+}
+.add-city-form input,
+.add-city-form select {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+  color: #2a2a72;
+  padding: 5px;
+  border: 2px solid #009ffd;
+  text-align: center;
+  margin-bottom: 2svh;
+  max-width: 60svw;
+}
+.add-city-form input::placeholder {
+  color: #009ffd;
+}
+.add-city-form select:invalid {
+  color: #009ffd;
+}
+.add-city-form select option {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 0.8rem;
+  color: #2a2a72;
+  background: #ec9a29;
+}
+.add-city-form label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  color: #009ffd;
+}
+.add-city-form label input[type="checkbox"] {
+  margin: 0;
+  inline-size: 1.2rem;
+  block-size: 1.2rem;
+  accent-color: #2a2a72;
+}
+
+/* ############### STYLING FOR ADD-CITY-BUTTON (used in Home- and Favorites-page ############### */
 
 .add-city-button {
   font-family: "Roboto Slab", serif;
@@ -253,11 +319,8 @@ footer {
   padding: 2svh 4svh;
   margin-top: 5svh;
   margin-bottom: 5svh;
-  box-shadow: 0 3px 7px rgba(42, 42, 114, 0.35), 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 7px rgba(42, 42, 114, 0.35), 0 1px 2px rgba(0, 0, 0, 0.15);
 }
-
-/* ############### STYLING FOR ADD-CITY-BUTTON (used in Home- and Favorites-page ############### */
-
 .add-city-button:hover {
   background-color: #2a2a72;
   color: #e3e3e3;

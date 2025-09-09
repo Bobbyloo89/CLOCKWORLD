@@ -111,15 +111,15 @@ export default function AddCity() {
 
   return (
     <main>
-
-      <form onSubmit={onSubmit}>
+      <div className="add-city-wrapper">
+        <form className="add-city-form" onSubmit={onSubmit}>
         <label>
-          City
+          {/* City */}
           <input
             type="text"
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            placeholder="City name"
+            placeholder="Enter city name..."
           />
         </label>
 
@@ -136,18 +136,20 @@ export default function AddCity() {
         />
 
         <label>
+          Add to favorites
           <input
             type="checkbox"
             checked={favorite}
             onChange={(e) => setFavorite(e.target.checked)}
           />
-          Add to favorites
         </label>
 
-        <button type="submit">Save</button>
+        <button className="add-city-button" type="submit">Add city</button>
       </form>
 
-      {message ? <p>{message}</p> : null}
+      {message ? <p className="form-message">{message}</p> : null}
+      </div>
+
     </main>
   );
 }
