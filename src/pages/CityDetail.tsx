@@ -11,16 +11,25 @@ import {
 import DigitalClock from "../components/clock/DigitalClock";
 import AnalogClock from "../components/clock/AnalogClock";
 
+// Showing details for a single city
+// In the current version of the program it looks almost identical to a CityCard
+// We do not use CityCard here, because we want the option to customize this view further in the future
+// Data comes from seed-list (data/cities.json) or user-list (from localStorage)
+// If a user-added entry exists, prefer it over a seeded entry, otherwise use seed entry
+
 export default function CityDetail() {
+  // Route params are slugified country/city, ex. "/sweden/stockholm"
   const { country: countrySlug, city: citySlug } = useParams<{
     country: string;
     city: string;
   }>();
 
   const seeds = seedCities as SeedCity[];
+
+  // Load once on mount
   const [userList, setUserList] = useState<CityEntry[]>(() => loadUserCities());
 
-  // Find match in list of pre-added cities
+  // Look for match in list of pre-added cities using slugified names
   const seedMatch = useMemo(
     () =>
       seeds.find(
@@ -30,27 +39,28 @@ export default function CityDetail() {
     [seeds, countrySlug, citySlug]
   );
 
-  // Find match in list of user-added cities
+  // Look for match in list of user-added cities in localStorage using slugified names
   const userMatch = useMemo(
     () => findUserCityBySlugs(userList, countrySlug ?? "", citySlug ?? ""),
     [userList, countrySlug, citySlug]
   );
 
-  // Show error if no match is found
+  // Show error if no match is found in either list
   if (!seedMatch && !userMatch) {
     return (
       <main>
-        <p>Stad hittades inte.</p>
+        <p>City not found.</p>
       </main>
     );
   }
 
-  // Decide what data to show, prioritizing user-added cities where tz/favorite may have changed
+  // Decide what data to show, prefer user-added cities where tz/favorite may have changed
   const country = userMatch?.country ?? seedMatch!.country;
   const city = userMatch?.city ?? seedMatch!.city;
   const tz = userMatch?.tz ?? seedMatch!.tz;
   const isFavorite = userMatch?.favorite === true;
 
+  // Toggle favorite in localStorage and update local state
   function onToggleFavorite() {
     const updated = toggleFavorite(country, city, tz);
     setUserList(updated);

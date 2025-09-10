@@ -1,3 +1,8 @@
+// <datalist>-input for quick filtering of countries
+// Used in AddCity-form, and validation happens there
+// Shows a dropdown-list with countries from data/countries.json
+// autoComplete="off" because I prefer it
+
 type Props = {
   countries: string[];
   value: string;
@@ -7,7 +12,7 @@ type Props = {
 export default function CountrySelect({ countries, value, onChange }: Props) {
   return (
     <label>
-      {/* Country */}
+      {/* Country-input: free text to make searchable + suggestions via datalist */}
       <input
         list="countries-list"
         value={value}
@@ -15,6 +20,7 @@ export default function CountrySelect({ countries, value, onChange }: Props) {
         placeholder="Choose country…"
         autoComplete="off"
       />
+      {/* datalist shows suggestions for the input above, value of selected option is inserted */}
       <datalist id="countries-list">
         {countries.map((c) => (
           <option key={c} value={c} />

@@ -2,6 +2,8 @@
 // https://github.com/thegirlcoderr/animated-clock
 // (slightly modified from JS to TS and with sweeping seconds)
 
+// SEE COMMENTS IF YOU WANT TO ADD BACK DIAL FOR SECONDS
+
 const requestAnimationFrameHolder = { latest: 0 };
 
 type ClockParams = {

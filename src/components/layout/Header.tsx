@@ -3,8 +3,16 @@ import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faBars } from "@fortawesome/free-solid-svg-icons";
 
+// Top-of-page navigation with Home-icon (left), title center, and a burger-menu (right)
+// Burger-menu becomes a navbar on desktop/wider screens
+// Menu closes on Esc and if clicking outside
+// When menu closes, focus is returned to menu-toggle-button
+// Menu is always rendered, hidden on mobile while closed
+
 type HeaderProps = { pathname: string };
 
+// Media-query hook that tracks when viewport is bigger than 768px
+// Used to switch between burger-menu on mobile and navbar on desktop
 function useIsDesktop() {
   const [isDesktop, setIsDesktop] = useState(
     () => window.matchMedia("(min-width: 768px)").matches
@@ -19,6 +27,7 @@ function useIsDesktop() {
   return isDesktop;
 }
 
+// Changes title in the header based on route/path
 function titleFromPath(pathname: string) {
   if (pathname === "/") return "CLOCKWORLD";
   if (pathname.startsWith("/add")) return "ADD CITY";
@@ -33,7 +42,8 @@ export default function Header({ pathname }: HeaderProps) {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const isDesktop = useIsDesktop();
 
-  // hjälpare att stänga + flytta fokus
+  // Close burger-menu and return focus to menu-toggle-button
+  // for better keyboard navigation experience
   function closeMenu() {
     setOpen(false);
     if (!isDesktop) {
@@ -41,7 +51,7 @@ export default function Header({ pathname }: HeaderProps) {
     }
   }
 
-  // Close using Escape-button
+  // Close using Esc
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       if (e.key === "Escape") closeMenu();
@@ -50,7 +60,7 @@ export default function Header({ pathname }: HeaderProps) {
     return () => document.removeEventListener("keydown", onKey);
   }, []);
 
-  // Close when clicking outside of menu
+  // Close when clicking outside of menu, or menu-toggle-button
   useEffect(() => {
     function onDown(e: MouseEvent) {
       if (!open) return;

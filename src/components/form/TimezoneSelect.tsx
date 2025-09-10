@@ -1,3 +1,7 @@
+// <select>-element for choosing IANA-timezone
+// Used in AddCity-form
+// Shows a dropdown-list with timezones matching the country entered in CountrySelect
+
 type Props = {
   timezones: string[];
   value: string;
@@ -7,7 +11,6 @@ type Props = {
 export default function TimezoneSelect({ timezones, value, onChange }: Props) {
   return (
     <label>
-      {/* Timezone */}
       <select required value={value} onChange={(e) => onChange(e.target.value)}>
         <option value="">Select a timezone…</option>
         {timezones.map((tz) => (
