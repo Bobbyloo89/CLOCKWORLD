@@ -2,18 +2,14 @@ import { Link } from "react-router-dom";
 import { slugify } from "../../utils/slug";
 import DigitalClock from "../clock/DigitalClock";
 import AnalogClock from "../clock/AnalogClock";
+import type { SeedCity } from "../../types";
 
 // Reusable card that shows a city's image (if it has one, not required),
 // name, country, analog and digital clock, and local date. Whole card is
 // a link to the CityDetail-page for that city.
 // Route params are slugified for stable URL:s
 
-type CityLike = {
-  city: string;
-  country: string;
-  tz: string;
-  img?: string;
-};
+type CityLike = Omit<SeedCity, "featured">;
 
 type Props = {
   data: CityLike;

@@ -8,6 +8,7 @@ import { slugify } from "../utils/slug";
 import { loadUserCities, saveUserCities } from "../utils/storage";
 import CountrySelect from "../components/form/CountrySelect";
 import TimezoneSelect from "../components/form/TimezoneSelect";
+import { uniq } from "../utils/array";
 
 // Form for adding new city (saved in localStorage)
 // City: free text (trimmed)
@@ -51,17 +52,15 @@ export default function AddCity() {
 
   // Find timezones for chosen country (if country exists)
   // If no/invalid country, return empty list to force country selection first
-  // Use Set to avoid duplicates, then sort alphabetically
+  // Use Generics to avoid duplicates, then sort alphabetically
   const timezonesForCountry = useMemo(() => {
     if (!country || !isValidCountryName(country)) return [];
     const cSlug = slugify(country);
-    const set = new Set<string>();
-    for (const item of iana) {
-      if (item.countries.some((nm) => slugify(nm) === cSlug)) {
-        set.add(item.tz);
-      }
-    }
-    return Array.from(set).sort((a, b) => a.localeCompare(b));
+    const tzs = iana
+      .filter((item) => item.countries.some((nm) => slugify(nm) === cSlug))
+      .map((item) => item.tz);
+
+    return uniq(tzs).sort((a, b) => a.localeCompare(b));
   }, [iana, country]);
 
   // Reset tz when country changes to avoid errors
