@@ -1,11 +1,11 @@
-### CLOCKWORLD av Mikael Lindstedt
+# CLOCKWORLD av Mikael Lindstedt
 
 I Clockworld kan du som användare kolla upp lokal tid och datum för olika städer, dels för förinställda storstäder
 världen över, men du kan även lägga till egna städer om du vill. Tider visas både analogt och digitalt, du kan visa  
 detaljerad vy för en stad, lägga till utvalda städer som favoriter, och ha alla dina favoriter samlade på ett ställe
 så att du snabbt kommer åt dem!
 
-# För att köra programmet:
+### För att köra programmet:
 
 Öppna VS Code eller annan kodeditor. I terminalen, kör:
 
@@ -18,7 +18,7 @@ npm run dev
 
 ## Hur tänkte du när du skissade gränssnitt? Gärna länk till skisser:
 
-_Länk till skiss:_ https://www.figma.com/design/gU9Ux3v9IMyVPLvzms60Cf/CLOCKWORLD?node-id=0-1&t=nc44XwD5mpUgcIY9-1
+*Länk till skiss:* https://www.figma.com/design/gU9Ux3v9IMyVPLvzms60Cf/CLOCKWORLD?node-id=0-1&t=nc44XwD5mpUgcIY9-1
 
 Jag började med att skriva alla User Stories för projektet. Dessa User Stories omvandlades till en kravspecifikation för
 programmet och med tydliga krav redo började jag att, med hjälp av papper och penna, skissa lösningar för dessa. Funktionalitet
@@ -34,14 +34,14 @@ grunden växte resten av designen fram.
 ## Hur har du valt att dela upp din applikation?
 
 Jag har så gott jag kan, med de förkunskaper jag har, försökt följa principer för "separation of concerns" under arbetet med projektet.
-/components är uppdelat i de byggstenar jag tänker att applikationen är uppbyggd av:  
-/layout, som innehåller min Footer och Header som visas i alla vyer av min applikation.  
-/city, som innehåller CityCard vilket är huvudbyggstenen i min applikation och är den del som visar majoriteten av "content" som sidan innehåller.  
-/clock, som innehåller AnalogClock och DigitalClock, och som renderas i varje CityCard och i CityDetail-sidan.  
-/form, som innehåller CountrySelect och TimezoneSelect. Dessa två komponenter hanterar logik och begränsningar för hur jag vill att
+**/components** är uppdelat i de byggstenar jag tänker att applikationen är uppbyggd av:  
+**/layout**, som innehåller min Footer och Header som visas i alla vyer av min applikation.  
+**/city**, som innehåller CityCard vilket är huvudbyggstenen i min applikation och är den del som visar majoriteten av "content" som sidan innehåller.  
+**/clock**, som innehåller AnalogClock och DigitalClock, och som renderas i varje CityCard och i CityDetail-sidan.  
+**/form**, som innehåller CountrySelect och TimezoneSelect. Dessa två komponenter hanterar logik och begränsningar för hur jag vill att
 användaren ska använda sig av formuläret för att lägga till en ny stad i applikationen utan svårigheter eller risk för att fel uppstår.
 
-/data innhåller, precis som det låter, all JSON-data jag använder mig av i applikationen.  
+**/data** innhåller, precis som det låter, all JSON-data jag använder mig av i applikationen.  
 /cities.json är mina 20 förinlagda storstäder och har formatet:
 
 ```json
@@ -83,14 +83,14 @@ för val av tidszon, och begränsar denna lista genom att filtrera den med hjäl
 är att om man t.ex. väljer "Sweden" som Country, så visas enbart "Europe/Stockholm" i listan då alla städer i Sverige följer samma regler för sommar-/vintertid och ligger i samma tidszon. Nackdelen är att om man väljer "United States" eller annat stort land så kan man få många förslag i listan, då landet ligger i flera olika tidszoner, och dessutom har olika regler för sommar-/vintertid inom samma tidszon. Jag känner ändå att
 valet blir lättare för användaren med denna lösningen, jämfört med att de ska behöva fylla massa detaljerad information för tidszon OCH lokala bestämmelser för DST.
 
-/pages innehåller de olika routes/vyer min applikation består av:  
-/Home - Startsidan, där jag visar CityCard:s för alla mina "featured" städer, och en knapp för att lägga till en ny stad (CTA!).  
-/AddCity - Innehåller formuläret för att lägga till en ny stad, där användaren får skriva in namnet på staden, välja land från en lista,
+**/pages** innehåller de olika routes/vyer min applikation består av:  
+**/Home** - Startsidan, där jag visar CityCard:s för alla mina "featured" städer, och en knapp för att lägga till en ny stad (CTA!).  
+**/AddCity** - Innehåller formuläret för att lägga till en ny stad, där användaren får skriva in namnet på staden, välja land från en lista,
 välja tidszon från en lista som filtreras efter val av land, en checkbox för om man vill lägga till den nya staden som favorit, och en knapp som sparar den nya staden i localStorage och tar användaren vidare till detaljvyn för den nytillagda staden.  
-/CityDetail - En detaljerad sida för vald stad med dynamisk routing via slugs (/country/city). I nuvarande version av applikationen så ser den nästan exakt likadan ut som ett CityCard, men jag använder mig inta av CityCard här då jag vill ha valmöjligheten att vidareutveckla den med mer detaljerad info i framtiden. Finns även en knapp här för att markera/avmarkera som favorit.  
-/Favorites - Visar CityCard:s för alla städer användaren favoritmarkerat och en knapp för att lägga till ny stad (CTA igen!).
+**/CityDetail** - En detaljerad sida för vald stad med dynamisk routing via slugs (/country/city). I nuvarande version av applikationen så ser den nästan exakt likadan ut som ett CityCard, men jag använder mig inta av CityCard här då jag vill ha valmöjligheten att vidareutveckla den med mer detaljerad info i framtiden. Finns även en knapp här för att markera/avmarkera som favorit.  
+**/Favorites** - Visar CityCard:s för alla städer användaren favoritmarkerat och en knapp för att lägga till ny stad (CTA igen!).
 
-/types innehåller en fil med Interfaces och Types som kan komma att användas på flera olika ställen i projektet/koden (och därför inte "tillhör" en enstaka, specifik komponent) som t.ex. SeedCity:
+**/types** innehåller en fil med Interfaces och Types som kan komma att användas på flera olika ställen i projektet/koden (och därför inte "tillhör" en enstaka, specifik komponent) som t.ex. SeedCity:
 
 ```ts
 export interface SeedCity {
@@ -104,9 +104,9 @@ export interface SeedCity {
 
 SeedCity används för mina 20 förinlagda städer, men fungerar även som mall för CityLike, som är ett interface som bestämmer vilka attribut och värden en stad ska ha i min applikation.
 
-/utils innehåller olika helpers som används i olika komponenter, t.ex. /clockAnimation beskriver hur den analoga klockan ska renderas, /slug som slugifierar lands- och stadsnamn så att de säkert och smidigt kan användas för routing, och /storage som innehåller logik för hur vi sparar och hämtar data från localStorage.
+**/utils** innehåller olika helpers som används i olika komponenter, t.ex. /clockAnimation beskriver hur den analoga klockan ska renderas, /slug som slugifierar lands- och stadsnamn så att de säkert och smidigt kan användas för routing, och /storage som innehåller logik för hur vi sparar och hämtar data från localStorage.
 
-/hooks innehåller just nu bara /useTick, som ser till att alla klockor vi renderar bara "tickar" en gång varje minut istället för varje sekund eller ms, jag bestämde mig tidigt för att jag inte ville visa sekundvisaren på de analoga klockorna då jag upplevde att det var för "busy" när man visar så många klockor samtidigt på skärmen, tanken är därför att useTick ska göra sidan snabbare och mindre CPU-krävande, då vi inte har något behov av att tiden uppdateras oftare än varje hel minut. useTick skapar även ett globalt "NU" i applikationen vilket gör att alla klockor inte behöver hålla koll på systemets tid individuellt.
+**/hooks** innehåller just nu bara /useTick, som ser till att alla klockor vi renderar bara "tickar" en gång varje minut istället för varje sekund eller ms, jag bestämde mig tidigt för att jag inte ville visa sekundvisaren på de analoga klockorna då jag upplevde att det var för "busy" när man visar så många klockor samtidigt på skärmen, tanken är därför att useTick ska göra sidan snabbare och mindre CPU-krävande, då vi inte har något behov av att tiden uppdateras oftare än varje hel minut. useTick skapar även ett globalt "NU" i applikationen vilket gör att alla klockor inte behöver hålla koll på systemets tid individuellt.
 
 ## Hur gick du tillväga när du använde Git, samt när du testade att programmet faktiskt fungerar som det ska?
 
