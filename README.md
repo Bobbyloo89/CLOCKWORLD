@@ -1,9 +1,6 @@
 # CLOCKWORLD av Mikael Lindstedt
 
-I Clockworld kan du som användare kolla upp lokal tid och datum för olika städer, dels för förinställda storstäder
-världen över, men du kan även lägga till egna städer om du vill. Tider visas både analogt och digitalt, du kan visa  
-detaljerad vy för en stad, lägga till utvalda städer som favoriter, och ha alla dina favoriter samlade på ett ställe
-så att du snabbt kommer åt dem!
+I Clockworld kan du som användare kolla upp lokal tid och datum för olika städer, dels för förinställda storstäder världen över, men du kan även lägga till egna städer om du vill. Tider visas både analogt och digitalt, du kan visa detaljerad vy för en stad, lägga till utvalda städer som favoriter, och ha alla dina favoriter samlade på ett ställe så att du snabbt kommer åt dem!
 
 ### För att köra programmet:
 
