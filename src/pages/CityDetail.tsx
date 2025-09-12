@@ -58,6 +58,9 @@ export default function CityDetail() {
   const country = userMatch?.country ?? seedMatch!.country;
   const city = userMatch?.city ?? seedMatch!.city;
   const tz = userMatch?.tz ?? seedMatch!.tz;
+  const imgSrc = seedMatch?.img
+    ? import.meta.env.BASE_URL + seedMatch.img
+    : undefined;
   const isFavorite = userMatch?.favorite === true;
 
   // Toggle favorite in localStorage and update local state
@@ -76,6 +79,7 @@ export default function CityDetail() {
         <button className="add-city-button" onClick={onToggleFavorite}>
           {isFavorite ? "Remove Favorite" : "Add Favorite"}
         </button>
+        {imgSrc ? <img src={imgSrc} alt={`${city}, ${country}`} /> : null}
       </div>
     </main>
   );

@@ -209,6 +209,8 @@ footer {
 /* ############### STYLING FOR CITYCARDS ############### */
 
 .city-card-wrapper {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -236,6 +238,22 @@ footer {
   font-style: normal;
   font-size: 1.2rem;
   color: #2a2a72;
+}
+.city-card-wrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3;
+}
+.city-card-wrapper h3,
+.city-card-wrapper h4,
+.city-card-wrapper .clock-container-outer,
+.city-card-wrapper .digital-clock-wrapper {
+  position: relative;
+  z-index: 2;
 }
 
 /* ############### STYLING FOR ADD-CITY-PAGE ############### */
@@ -338,12 +356,15 @@ footer {
 /* ############### STYLING FOR CITY DETAILS-PAGE ############### */
 
 .city-details-wrapper {
+  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   padding-top: 4svh;
   padding-bottom: 4svh;
+  overflow: hidden;
+  min-height: 82svh;
 }
 .city-details-wrapper h2,
 .city-details-wrapper h3 {
@@ -370,6 +391,23 @@ footer {
   height: 100%;
   transform-origin: center center;
   transform: scale(1.4);
+}
+.city-details-wrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3;
+}
+.city-details-wrapper h2,
+.city-details-wrapper h3,
+.city-details-wrapper .clock-container-outer,
+.city-details-wrapper .digital-clock-wrapper,
+.city-details-wrapper button {
+  position: relative; /* lyft innehållet över bilden */
+  z-index: 2;
 }
 
 /* ############### STYLING FOR DIGITAL CLOCK ############### */
@@ -403,7 +441,6 @@ footer {
 /* ################################################################################################################################ */
 
 @media (min-width: 768px) {
-
   /* ############### HEADER ############### */
 
   header nav {
@@ -455,7 +492,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
   }
-  
+
   /* ############### STYLING FOR CITYCARDS ############### */
 
   .city-card-wrapper {
@@ -477,14 +514,14 @@ footer {
 
   /* ############### STYLING FOR CITY DETAILS-PAGE ############### */
 
-.city-details-wrapper .clock-container {
-  width: 35svh;
-  height: 35svh;
-}
-.city-details-wrapper .clock-container canvas {
-  width: 100%;
-  height: 100%;
-  transform-origin: center center;
-  transform: scale(1.4);
-}
+  .city-details-wrapper .clock-container {
+    width: 35svh;
+    height: 35svh;
+  }
+  .city-details-wrapper .clock-container canvas {
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    transform: scale(1.4);
+  }
 }

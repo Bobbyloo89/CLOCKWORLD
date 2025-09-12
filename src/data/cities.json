@@ -1,34 +1,45 @@
 [
-  { "city": "Tokyo", "country": "Japan", "tz": "Asia/Tokyo", "featured": true },
+  {
+    "city": "Tokyo",
+    "country": "Japan",
+    "tz": "Asia/Tokyo",
+    "featured": true,
+    "img": "images/cities/TOKYO.jpg"
+  },
   {
     "city": "Paris",
     "country": "France",
     "tz": "Europe/Paris",
-    "featured": true
+    "featured": true,
+    "img": "images/cities/PARIS.jpg"
   },
   {
     "city": "Moscow",
     "country": "Russia",
     "tz": "Europe/Moscow",
-    "featured": true
+    "featured": true,
+    "img": "images/cities/MOSCOW.jpg"
   },
   {
     "city": "New York",
     "country": "United States",
     "tz": "America/New_York",
-    "featured": true
+    "featured": true,
+    "img": "images/cities/NEW_YORK.jpg"
   },
   {
     "city": "Los Angeles",
     "country": "United States",
     "tz": "America/Los_Angeles",
-    "featured": true
+    "featured": true,
+    "img": "images/cities/LOS_ANGELES.jpg"
   },
   {
     "city": "São Paulo",
     "country": "Brazil",
     "tz": "America/Sao_Paulo",
-    "featured": true
+    "featured": true,
+    "img": "images/cities/SAO_PAULO.jpg"
   },
 
   {
